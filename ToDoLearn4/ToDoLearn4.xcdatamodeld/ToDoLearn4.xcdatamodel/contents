@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="13F1077" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Habit" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HabitHistory" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="no" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="HabitTime" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="no" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="PomodoroHistory" syncable="YES">
+        <attribute name="duration" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="endtime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="starttime" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="PomodoroState" syncable="YES">
+        <attribute name="resttime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="soundstatus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="vibratestatus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="worktime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="ToDo1" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="items" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Habit" positionX="-63" positionY="45" width="128" height="75"/>
+        <element name="HabitHistory" positionX="-54" positionY="81" width="128" height="103"/>
+        <element name="HabitTime" positionX="-63" positionY="45" width="128" height="105"/>
+        <element name="PomodoroHistory" positionX="-63" positionY="54" width="128" height="120"/>
+        <element name="PomodoroState" positionX="-63" positionY="27" width="128" height="105"/>
+        <element name="ToDo1" positionX="-63" positionY="9" width="128" height="120"/>
+    </elements>
+</model>

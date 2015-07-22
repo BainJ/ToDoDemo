@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A760EDB91B01DF8E003A04FF /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A760EDB81B01DF8E003A04FF /* NotificationManager.swift */; };
+		A760EDBB1B021B52003A04FF /* ToDoCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A760EDBA1B021B52003A04FF /* ToDoCoreDataManager.swift */; };
+		A7731E711B0D9198002A774E /* PomodoroHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7731E701B0D9198002A774E /* PomodoroHistoryManager.swift */; };
+		A787C7A61B0C590F0072DC68 /* HabitMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A787C7A41B0C590F0072DC68 /* HabitMainTableViewCell.swift */; };
+		A787C7A71B0C590F0072DC68 /* HabitMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A787C7A51B0C590F0072DC68 /* HabitMainTableViewCell.xib */; };
+		A787C7AA1B0C59370072DC68 /* HabitTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A787C7A81B0C59370072DC68 /* HabitTimeTableViewCell.swift */; };
+		A787C7AB1B0C59370072DC68 /* HabitTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A787C7A91B0C59370072DC68 /* HabitTimeTableViewCell.xib */; };
+		A78ABE501B1ABADA00A22B9D /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78ABE4F1B1ABAD900A22B9D /* CircularProgress.swift */; };
+		A78ABE521B1B131B00A22B9D /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78ABE511B1B131B00A22B9D /* TestTableViewController.swift */; };
+		A78ABE571B1B1D1200A22B9D /* PomodoroHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78ABE551B1B1D1200A22B9D /* PomodoroHistoryTableViewCell.swift */; };
+		A78ABE581B1B1D1200A22B9D /* PomodoroHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78ABE561B1B1D1200A22B9D /* PomodoroHistoryTableViewCell.xib */; };
+		A790FB071AF87E9900B2FBC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A790FB061AF87E9900B2FBC2 /* AppDelegate.swift */; };
+		A790FB0A1AF87E9900B2FBC2 /* ToDoLearn4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A790FB081AF87E9900B2FBC2 /* ToDoLearn4.xcdatamodeld */; };
+		A790FB0F1AF87E9900B2FBC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A790FB0D1AF87E9900B2FBC2 /* Main.storyboard */; };
+		A790FB111AF87E9900B2FBC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A790FB101AF87E9900B2FBC2 /* Images.xcassets */; };
+		A790FB141AF87E9900B2FBC2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A790FB121AF87E9900B2FBC2 /* LaunchScreen.xib */; };
+		A790FB201AF87E9900B2FBC2 /* ToDoLearn4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A790FB1F1AF87E9900B2FBC2 /* ToDoLearn4Tests.swift */; };
+		A790FB2A1AF8824F00B2FBC2 /* ToDoTableViewControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A790FB291AF8824F00B2FBC2 /* ToDoTableViewControlle.swift */; };
+		A790FB2C1AF882F600B2FBC2 /* NameAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A790FB2B1AF882F600B2FBC2 /* NameAddViewController.swift */; };
+		A790FB2E1AF8839F00B2FBC2 /* TimeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A790FB2D1AF8839F00B2FBC2 /* TimeSelectViewController.swift */; };
+		A790FB301AF88DE800B2FBC2 /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A790FB2F1AF88DE800B2FBC2 /* PomodoroViewController.swift */; };
+		A790FB321AF88E4B00B2FBC2 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A790FB311AF88E4B00B2FBC2 /* TimeManager.swift */; };
+		A790FB341AF88E9800B2FBC2 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A790FB331AF88E9800B2FBC2 /* SoundManager.swift */; };
+		A790FB361AF88EF000B2FBC2 /* TimeSetTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A790FB351AF88EF000B2FBC2 /* TimeSetTableTableViewController.swift */; };
+		A790FB3C1AF890FB00B2FBC2 /* reset.wav in Resources */ = {isa = PBXBuildFile; fileRef = A790FB3B1AF890FB00B2FBC2 /* reset.wav */; };
+		A790FB3E1AF8910200B2FBC2 /* rest.wav in Resources */ = {isa = PBXBuildFile; fileRef = A790FB3D1AF8910200B2FBC2 /* rest.wav */; };
+		A790FB401AF8910800B2FBC2 /* work.wav in Resources */ = {isa = PBXBuildFile; fileRef = A790FB3F1AF8910800B2FBC2 /* work.wav */; };
+		A7CC6CBB1B24987000D81323 /* DataPickViewNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CC6CBA1B24987000D81323 /* DataPickViewNib.xib */; };
+		A7CC6CBD1B24987B00D81323 /* DatePickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC6CBC1B24987B00D81323 /* DatePickView.swift */; };
+		A7CC6CC01B249A5900D81323 /* imgCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC6CBE1B249A5900D81323 /* imgCollectionViewCell.swift */; };
+		A7CC6CC11B249A5900D81323 /* imgCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC6CBF1B249A5900D81323 /* imgCollectionViewController.swift */; };
+		A7CC6CC51B249A6F00D81323 /* NotifiedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC6CC21B249A6F00D81323 /* NotifiedCollectionViewCell.swift */; };
+		A7CC6CC61B249A6F00D81323 /* NotifiedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC6CC31B249A6F00D81323 /* NotifiedCollectionViewController.swift */; };
+		A7CC6CC71B249A6F00D81323 /* RepeatCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC6CC41B249A6F00D81323 /* RepeatCollectionViewController.swift */; };
+		A7CC6CC91B249B2D00D81323 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC6CC81B249B2D00D81323 /* Color.swift */; };
+		A7CC6CD01B24A82200D81323 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC6CCF1B24A82100D81323 /* DatePickerView.swift */; };
+		A7CC6CD21B24A85400D81323 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CC6CD11B24A85400D81323 /* DatePickerView.xib */; };
+		A7CECBA81B25BA87004FBB72 /* ToDoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CECBA61B25BA87004FBB72 /* ToDoCellTableViewCell.swift */; };
+		A7CECBA91B25BA87004FBB72 /* ToDoCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CECBA71B25BA87004FBB72 /* ToDoCellTableViewCell.xib */; };
+		A7CECBAD1B25BCC6004FBB72 /* SomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CECBAC1B25BCC6004FBB72 /* SomeData.swift */; };
+		A7F64A671B0887FE00A56CE3 /* HabitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F64A661B0887FE00A56CE3 /* HabitTableViewController.swift */; };
+		A7F64A691B08929B00A56CE3 /* HabitNameAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F64A681B08929B00A56CE3 /* HabitNameAddViewController.swift */; };
+		A7F64A6B1B08B9B000A56CE3 /* HabitDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F64A6A1B08B9B000A56CE3 /* HabitDescriptionViewController.swift */; };
+		A7F6D81F1B1C6D8E003DE111 /* PopupTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6D81E1B1C6D8E003DE111 /* PopupTestViewController.swift */; };
+		A7FCB5341B09CA8300918141 /* HabitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCB5331B09CA8300918141 /* HabitManager.swift */; };
+		A7FCB5361B09CE0300918141 /* HabitTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCB5351B09CE0300918141 /* HabitTimeManager.swift */; };
+		A7FCB5381B09EB8D00918141 /* HabitTimeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCB5371B09EB8D00918141 /* HabitTimeSelectViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A790FB1A1AF87E9900B2FBC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A790FAF91AF87E9900B2FBC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A790FB001AF87E9900B2FBC2;
+			remoteInfo = ToDoLearn4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A760EDB81B01DF8E003A04FF /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		A760EDBA1B021B52003A04FF /* ToDoCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCoreDataManager.swift; sourceTree = "<group>"; };
+		A7731E701B0D9198002A774E /* PomodoroHistoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroHistoryManager.swift; sourceTree = "<group>"; };
+		A787C7A41B0C590F0072DC68 /* HabitMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitMainTableViewCell.swift; sourceTree = "<group>"; };
+		A787C7A51B0C590F0072DC68 /* HabitMainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HabitMainTableViewCell.xib; sourceTree = "<group>"; };
+		A787C7A81B0C59370072DC68 /* HabitTimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitTimeTableViewCell.swift; sourceTree = "<group>"; };
+		A787C7A91B0C59370072DC68 /* HabitTimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HabitTimeTableViewCell.xib; sourceTree = "<group>"; };
+		A78ABE4F1B1ABAD900A22B9D /* CircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		A78ABE511B1B131B00A22B9D /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		A78ABE551B1B1D1200A22B9D /* PomodoroHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		A78ABE561B1B1D1200A22B9D /* PomodoroHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PomodoroHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		A790FB011AF87E9900B2FBC2 /* ToDoLearn4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoLearn4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A790FB061AF87E9900B2FBC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A790FB091AF87E9900B2FBC2 /* ToDoLearn4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoLearn4.xcdatamodel; sourceTree = "<group>"; };
+		A790FB0E1AF87E9900B2FBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A790FB101AF87E9900B2FBC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A790FB131AF87E9900B2FBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A790FB191AF87E9900B2FBC2 /* ToDoLearn4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoLearn4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A790FB1E1AF87E9900B2FBC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A790FB1F1AF87E9900B2FBC2 /* ToDoLearn4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoLearn4Tests.swift; sourceTree = "<group>"; };
+		A790FB291AF8824F00B2FBC2 /* ToDoTableViewControlle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableViewControlle.swift; sourceTree = "<group>"; };
+		A790FB2B1AF882F600B2FBC2 /* NameAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameAddViewController.swift; sourceTree = "<group>"; };
+		A790FB2D1AF8839F00B2FBC2 /* TimeSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSelectViewController.swift; sourceTree = "<group>"; };
+		A790FB2F1AF88DE800B2FBC2 /* PomodoroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
+		A790FB311AF88E4B00B2FBC2 /* TimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		A790FB331AF88E9800B2FBC2 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		A790FB351AF88EF000B2FBC2 /* TimeSetTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSetTableTableViewController.swift; sourceTree = "<group>"; };
+		A790FB3B1AF890FB00B2FBC2 /* reset.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reset.wav; sourceTree = "<group>"; };
+		A790FB3D1AF8910200B2FBC2 /* rest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rest.wav; sourceTree = "<group>"; };
+		A790FB3F1AF8910800B2FBC2 /* work.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = work.wav; sourceTree = "<group>"; };
+		A7912E681AFC7C660011A422 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7CC6CBA1B24987000D81323 /* DataPickViewNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataPickViewNib.xib; sourceTree = "<group>"; };
+		A7CC6CBC1B24987B00D81323 /* DatePickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickView.swift; sourceTree = "<group>"; };
+		A7CC6CBE1B249A5900D81323 /* imgCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imgCollectionViewCell.swift; sourceTree = "<group>"; };
+		A7CC6CBF1B249A5900D81323 /* imgCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imgCollectionViewController.swift; sourceTree = "<group>"; };
+		A7CC6CC21B249A6F00D81323 /* NotifiedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifiedCollectionViewCell.swift; sourceTree = "<group>"; };
+		A7CC6CC31B249A6F00D81323 /* NotifiedCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifiedCollectionViewController.swift; sourceTree = "<group>"; };
+		A7CC6CC41B249A6F00D81323 /* RepeatCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatCollectionViewController.swift; sourceTree = "<group>"; };
+		A7CC6CC81B249B2D00D81323 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A7CC6CCF1B24A82100D81323 /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		A7CC6CD11B24A85400D81323 /* DatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
+		A7CECBA61B25BA87004FBB72 /* ToDoCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCellTableViewCell.swift; sourceTree = "<group>"; };
+		A7CECBA71B25BA87004FBB72 /* ToDoCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToDoCellTableViewCell.xib; sourceTree = "<group>"; };
+		A7CECBAC1B25BCC6004FBB72 /* SomeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeData.swift; sourceTree = "<group>"; };
+		A7F64A661B0887FE00A56CE3 /* HabitTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitTableViewController.swift; sourceTree = "<group>"; };
+		A7F64A681B08929B00A56CE3 /* HabitNameAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitNameAddViewController.swift; sourceTree = "<group>"; };
+		A7F64A6A1B08B9B000A56CE3 /* HabitDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitDescriptionViewController.swift; sourceTree = "<group>"; };
+		A7F6D81E1B1C6D8E003DE111 /* PopupTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupTestViewController.swift; sourceTree = "<group>"; };
+		A7FCB5331B09CA8300918141 /* HabitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitManager.swift; sourceTree = "<group>"; };
+		A7FCB5351B09CE0300918141 /* HabitTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitTimeManager.swift; sourceTree = "<group>"; };
+		A7FCB5371B09EB8D00918141 /* HabitTimeSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitTimeSelectViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A790FAFE1AF87E9900B2FBC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A790FB161AF87E9900B2FBC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A760EDB41B01DCC7003A04FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A78ABE4F1B1ABAD900A22B9D /* CircularProgress.swift */,
+				A790FB331AF88E9800B2FBC2 /* SoundManager.swift */,
+				A790FB311AF88E4B00B2FBC2 /* TimeManager.swift */,
+				A760EDB81B01DF8E003A04FF /* NotificationManager.swift */,
+				A760EDBA1B021B52003A04FF /* ToDoCoreDataManager.swift */,
+				A7FCB5331B09CA8300918141 /* HabitManager.swift */,
+				A7FCB5351B09CE0300918141 /* HabitTimeManager.swift */,
+				A7731E701B0D9198002A774E /* PomodoroHistoryManager.swift */,
+				A7CC6CC81B249B2D00D81323 /* Color.swift */,
+				A7CECBAC1B25BCC6004FBB72 /* SomeData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A760EDB51B01DCF7003A04FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A790FB0D1AF87E9900B2FBC2 /* Main.storyboard */,
+				A7CECBA61B25BA87004FBB72 /* ToDoCellTableViewCell.swift */,
+				A7CECBA71B25BA87004FBB72 /* ToDoCellTableViewCell.xib */,
+				A787C7A41B0C590F0072DC68 /* HabitMainTableViewCell.swift */,
+				A787C7A51B0C590F0072DC68 /* HabitMainTableViewCell.xib */,
+				A787C7A81B0C59370072DC68 /* HabitTimeTableViewCell.swift */,
+				A787C7A91B0C59370072DC68 /* HabitTimeTableViewCell.xib */,
+				A78ABE551B1B1D1200A22B9D /* PomodoroHistoryTableViewCell.swift */,
+				A78ABE561B1B1D1200A22B9D /* PomodoroHistoryTableViewCell.xib */,
+				A7CC6CBC1B24987B00D81323 /* DatePickView.swift */,
+				A7CC6CBA1B24987000D81323 /* DataPickViewNib.xib */,
+				A7CC6CCF1B24A82100D81323 /* DatePickerView.swift */,
+				A7CC6CD11B24A85400D81323 /* DatePickerView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A760EDB61B01DD01003A04FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A7CC6CCC1B249C7300D81323 /* Habit */,
+				A7CC6CCB1B249C6200D81323 /* ToDo */,
+				A7CC6CCA1B249C2800D81323 /* Pomodoro */,
+				A7F6D81E1B1C6D8E003DE111 /* PopupTestViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A760EDB71B01DD26003A04FF /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A790FB121AF87E9900B2FBC2 /* LaunchScreen.xib */,
+				A790FB101AF87E9900B2FBC2 /* Images.xcassets */,
+				A790FB081AF87E9900B2FBC2 /* ToDoLearn4.xcdatamodeld */,
+				A790FB061AF87E9900B2FBC2 /* AppDelegate.swift */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		A790FAF81AF87E9900B2FBC2 = {
+			isa = PBXGroup;
+			children = (
+				A790FB031AF87E9900B2FBC2 /* ToDoLearn4 */,
+				A790FB1C1AF87E9900B2FBC2 /* ToDoLearn4Tests */,
+				A790FB021AF87E9900B2FBC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A790FB021AF87E9900B2FBC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A790FB011AF87E9900B2FBC2 /* ToDoLearn4.app */,
+				A790FB191AF87E9900B2FBC2 /* ToDoLearn4Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A790FB031AF87E9900B2FBC2 /* ToDoLearn4 */ = {
+			isa = PBXGroup;
+			children = (
+				A760EDB71B01DD26003A04FF /* Others */,
+				A760EDB61B01DD01003A04FF /* Controller */,
+				A760EDB51B01DCF7003A04FF /* View */,
+				A760EDB41B01DCC7003A04FF /* Model */,
+				A790FB041AF87E9900B2FBC2 /* Supporting Files */,
+			);
+			path = ToDoLearn4;
+			sourceTree = "<group>";
+		};
+		A790FB041AF87E9900B2FBC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7912E681AFC7C660011A422 /* Info.plist */,
+				A790FB3F1AF8910800B2FBC2 /* work.wav */,
+				A790FB3D1AF8910200B2FBC2 /* rest.wav */,
+				A790FB3B1AF890FB00B2FBC2 /* reset.wav */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A790FB1C1AF87E9900B2FBC2 /* ToDoLearn4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A790FB1F1AF87E9900B2FBC2 /* ToDoLearn4Tests.swift */,
+				A790FB1D1AF87E9900B2FBC2 /* Supporting Files */,
+			);
+			path = ToDoLearn4Tests;
+			sourceTree = "<group>";
+		};
+		A790FB1D1AF87E9900B2FBC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A790FB1E1AF87E9900B2FBC2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7CC6CCA1B249C2800D81323 /* Pomodoro */ = {
+			isa = PBXGroup;
+			children = (
+				A78ABE511B1B131B00A22B9D /* TestTableViewController.swift */,
+				A790FB2F1AF88DE800B2FBC2 /* PomodoroViewController.swift */,
+				A790FB351AF88EF000B2FBC2 /* TimeSetTableTableViewController.swift */,
+			);
+			name = Pomodoro;
+			sourceTree = "<group>";
+		};
+		A7CC6CCB1B249C6200D81323 /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				A790FB291AF8824F00B2FBC2 /* ToDoTableViewControlle.swift */,
+				A790FB2B1AF882F600B2FBC2 /* NameAddViewController.swift */,
+				A790FB2D1AF8839F00B2FBC2 /* TimeSelectViewController.swift */,
+				A7CC6CBE1B249A5900D81323 /* imgCollectionViewCell.swift */,
+				A7CC6CBF1B249A5900D81323 /* imgCollectionViewController.swift */,
+				A7CC6CC21B249A6F00D81323 /* NotifiedCollectionViewCell.swift */,
+				A7CC6CC31B249A6F00D81323 /* NotifiedCollectionViewController.swift */,
+				A7CC6CC41B249A6F00D81323 /* RepeatCollectionViewController.swift */,
+			);
+			name = ToDo;
+			sourceTree = "<group>";
+		};
+		A7CC6CCC1B249C7300D81323 /* Habit */ = {
+			isa = PBXGroup;
+			children = (
+				A7F64A661B0887FE00A56CE3 /* HabitTableViewController.swift */,
+				A7F64A681B08929B00A56CE3 /* HabitNameAddViewController.swift */,
+				A7F64A6A1B08B9B000A56CE3 /* HabitDescriptionViewController.swift */,
+				A7FCB5371B09EB8D00918141 /* HabitTimeSelectViewController.swift */,
+			);
+			name = Habit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A790FB001AF87E9900B2FBC2 /* ToDoLearn4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A790FB231AF87E9900B2FBC2 /* Build configuration list for PBXNativeTarget "ToDoLearn4" */;
+			buildPhases = (
+				A790FAFD1AF87E9900B2FBC2 /* Sources */,
+				A790FAFE1AF87E9900B2FBC2 /* Frameworks */,
+				A790FAFF1AF87E9900B2FBC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToDoLearn4;
+			productName = ToDoLearn4;
+			productReference = A790FB011AF87E9900B2FBC2 /* ToDoLearn4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A790FB181AF87E9900B2FBC2 /* ToDoLearn4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A790FB261AF87E9900B2FBC2 /* Build configuration list for PBXNativeTarget "ToDoLearn4Tests" */;
+			buildPhases = (
+				A790FB151AF87E9900B2FBC2 /* Sources */,
+				A790FB161AF87E9900B2FBC2 /* Frameworks */,
+				A790FB171AF87E9900B2FBC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A790FB1B1AF87E9900B2FBC2 /* PBXTargetDependency */,
+			);
+			name = ToDoLearn4Tests;
+			productName = ToDoLearn4Tests;
+			productReference = A790FB191AF87E9900B2FBC2 /* ToDoLearn4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A790FAF91AF87E9900B2FBC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = bain;
+				TargetAttributes = {
+					A790FB001AF87E9900B2FBC2 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					A790FB181AF87E9900B2FBC2 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = A790FB001AF87E9900B2FBC2;
+					};
+				};
+			};
+			buildConfigurationList = A790FAFC1AF87E9900B2FBC2 /* Build configuration list for PBXProject "ToDoLearn4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A790FAF81AF87E9900B2FBC2;
+			productRefGroup = A790FB021AF87E9900B2FBC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A790FB001AF87E9900B2FBC2 /* ToDoLearn4 */,
+				A790FB181AF87E9900B2FBC2 /* ToDoLearn4Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A790FAFF1AF87E9900B2FBC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A790FB0F1AF87E9900B2FBC2 /* Main.storyboard in Resources */,
+				A7CECBA91B25BA87004FBB72 /* ToDoCellTableViewCell.xib in Resources */,
+				A790FB141AF87E9900B2FBC2 /* LaunchScreen.xib in Resources */,
+				A787C7A71B0C590F0072DC68 /* HabitMainTableViewCell.xib in Resources */,
+				A790FB111AF87E9900B2FBC2 /* Images.xcassets in Resources */,
+				A78ABE581B1B1D1200A22B9D /* PomodoroHistoryTableViewCell.xib in Resources */,
+				A7CC6CBB1B24987000D81323 /* DataPickViewNib.xib in Resources */,
+				A7CC6CD21B24A85400D81323 /* DatePickerView.xib in Resources */,
+				A787C7AB1B0C59370072DC68 /* HabitTimeTableViewCell.xib in Resources */,
+				A790FB3C1AF890FB00B2FBC2 /* reset.wav in Resources */,
+				A790FB3E1AF8910200B2FBC2 /* rest.wav in Resources */,
+				A790FB401AF8910800B2FBC2 /* work.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A790FB171AF87E9900B2FBC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A790FAFD1AF87E9900B2FBC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7FCB5361B09CE0300918141 /* HabitTimeManager.swift in Sources */,
+				A7FCB5341B09CA8300918141 /* HabitManager.swift in Sources */,
+				A7F64A691B08929B00A56CE3 /* HabitNameAddViewController.swift in Sources */,
+				A7CC6CD01B24A82200D81323 /* DatePickerView.swift in Sources */,
+				A7F6D81F1B1C6D8E003DE111 /* PopupTestViewController.swift in Sources */,
+				A7CC6CC61B249A6F00D81323 /* NotifiedCollectionViewController.swift in Sources */,
+				A7CC6CC91B249B2D00D81323 /* Color.swift in Sources */,
+				A7CC6CC51B249A6F00D81323 /* NotifiedCollectionViewCell.swift in Sources */,
+				A7CC6CC01B249A5900D81323 /* imgCollectionViewCell.swift in Sources */,
+				A790FB2E1AF8839F00B2FBC2 /* TimeSelectViewController.swift in Sources */,
+				A790FB341AF88E9800B2FBC2 /* SoundManager.swift in Sources */,
+				A790FB071AF87E9900B2FBC2 /* AppDelegate.swift in Sources */,
+				A78ABE521B1B131B00A22B9D /* TestTableViewController.swift in Sources */,
+				A790FB321AF88E4B00B2FBC2 /* TimeManager.swift in Sources */,
+				A760EDBB1B021B52003A04FF /* ToDoCoreDataManager.swift in Sources */,
+				A7FCB5381B09EB8D00918141 /* HabitTimeSelectViewController.swift in Sources */,
+				A760EDB91B01DF8E003A04FF /* NotificationManager.swift in Sources */,
+				A790FB361AF88EF000B2FBC2 /* TimeSetTableTableViewController.swift in Sources */,
+				A7731E711B0D9198002A774E /* PomodoroHistoryManager.swift in Sources */,
+				A78ABE571B1B1D1200A22B9D /* PomodoroHistoryTableViewCell.swift in Sources */,
+				A7CC6CC11B249A5900D81323 /* imgCollectionViewController.swift in Sources */,
+				A7CC6CC71B249A6F00D81323 /* RepeatCollectionViewController.swift in Sources */,
+				A7CC6CBD1B24987B00D81323 /* DatePickView.swift in Sources */,
+				A790FB2A1AF8824F00B2FBC2 /* ToDoTableViewControlle.swift in Sources */,
+				A7F64A6B1B08B9B000A56CE3 /* HabitDescriptionViewController.swift in Sources */,
+				A787C7AA1B0C59370072DC68 /* HabitTimeTableViewCell.swift in Sources */,
+				A790FB301AF88DE800B2FBC2 /* PomodoroViewController.swift in Sources */,
+				A787C7A61B0C590F0072DC68 /* HabitMainTableViewCell.swift in Sources */,
+				A790FB0A1AF87E9900B2FBC2 /* ToDoLearn4.xcdatamodeld in Sources */,
+				A7CECBA81B25BA87004FBB72 /* ToDoCellTableViewCell.swift in Sources */,
+				A790FB2C1AF882F600B2FBC2 /* NameAddViewController.swift in Sources */,
+				A7CECBAD1B25BCC6004FBB72 /* SomeData.swift in Sources */,
+				A7F64A671B0887FE00A56CE3 /* HabitTableViewController.swift in Sources */,
+				A78ABE501B1ABADA00A22B9D /* CircularProgress.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A790FB151AF87E9900B2FBC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A790FB201AF87E9900B2FBC2 /* ToDoLearn4Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A790FB1B1AF87E9900B2FBC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A790FB001AF87E9900B2FBC2 /* ToDoLearn4 */;
+			targetProxy = A790FB1A1AF87E9900B2FBC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A790FB0D1AF87E9900B2FBC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A790FB0E1AF87E9900B2FBC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A790FB121AF87E9900B2FBC2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A790FB131AF87E9900B2FBC2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A790FB211AF87E9900B2FBC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A790FB221AF87E9900B2FBC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A790FB241AF87E9900B2FBC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ToDoLearn4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A790FB251AF87E9900B2FBC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ToDoLearn4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A790FB271AF87E9900B2FBC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ToDoLearn4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDoLearn4.app/ToDoLearn4";
+			};
+			name = Debug;
+		};
+		A790FB281AF87E9900B2FBC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ToDoLearn4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDoLearn4.app/ToDoLearn4";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A790FAFC1AF87E9900B2FBC2 /* Build configuration list for PBXProject "ToDoLearn4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A790FB211AF87E9900B2FBC2 /* Debug */,
+				A790FB221AF87E9900B2FBC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A790FB231AF87E9900B2FBC2 /* Build configuration list for PBXNativeTarget "ToDoLearn4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A790FB241AF87E9900B2FBC2 /* Debug */,
+				A790FB251AF87E9900B2FBC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A790FB261AF87E9900B2FBC2 /* Build configuration list for PBXNativeTarget "ToDoLearn4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A790FB271AF87E9900B2FBC2 /* Debug */,
+				A790FB281AF87E9900B2FBC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A790FB081AF87E9900B2FBC2 /* ToDoLearn4.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A790FB091AF87E9900B2FBC2 /* ToDoLearn4.xcdatamodel */,
+			);
+			currentVersion = A790FB091AF87E9900B2FBC2 /* ToDoLearn4.xcdatamodel */;
+			path = ToDoLearn4.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A790FAF91AF87E9900B2FBC2 /* Project object */;
+}
